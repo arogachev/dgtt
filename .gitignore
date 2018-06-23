@@ -1,3 +1,10 @@
 # Code editor settings
 /.idea
 /.vscode
+
+# Python cache
+__pycache__/
+.pyc
+
+# Project local settings
+/dgtt/local_settings.py
