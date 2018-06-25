@@ -5,7 +5,7 @@ from mptt.models import MPTTModel, TreeForeignKey
 
 
 class Building(models.Model):
-    address = models.CharField(max_length=50, unique=True)
+    address = models.CharField(max_length=75, unique=True)
     coordinates = PointField(geography=True, unique=True)
 
     class Meta:
@@ -22,7 +22,7 @@ class Category(MPTTModel):
 
 class Organization(models.Model):
     name = models.CharField(max_length=50)
-    phones = ArrayField(models.CharField(max_length=11))
+    phones = ArrayField(models.CharField(max_length=20))
     building = models.ForeignKey(Building, on_delete=models.CASCADE)
     categories = models.ManyToManyField(Category)
 
