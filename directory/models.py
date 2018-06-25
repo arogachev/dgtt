@@ -28,3 +28,6 @@ class Organization(models.Model):
 
     class Meta:
         ordering = ('name',)
+        indexes = [
+            models.Index(fields=['building']),
+        ]
