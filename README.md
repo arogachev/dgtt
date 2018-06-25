@@ -137,4 +137,4 @@ Examples:
 - Organizations by building: http://127.0.0.1:8000/organizations/by-building/1/.
 - Organizations by category: http://127.0.0.1:8000/organizations/by-category/1/
 - Organizations by point with radius: http://127.0.0.1:8000/organizations/by-radius/54.873950,69.152105/10/. Radius must be specified in kilometers.
-- Organizations by rectangle: 127.0.0.1:8000/organizations/by-rectangle/54.873950,69.152105/54.973950,69.052105/. The first parameter is a north west point, the second one is a south west point.
+- Organizations by rectangle: http://127.0.0.1:8000/organizations/by-rectangle/54.873950,69.152105/54.973950,69.052105/. The first parameter is a north west point, the second one is a south west point.
